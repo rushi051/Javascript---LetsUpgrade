@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Assignment 1</title>
+    
+</head>
+<body>
+    
+        <h2>console.log() </h2>
+    <p>
+        Mainly used to log(print) the output to the console. We can put any type inside the log(), be it a string, array, object, boolean etc.
+          
+    </p>
+    <script> console.log({name:"Rushikesh",age:21}); 
+             
+    </script>
+    
+    <h2> console.error()</h2>
+    <p>
+        Used to log error message to the console. Useful in testing of code. By default the error message will be highlighted with red color.
+    </p>
+        <script> console.error("An error occured") </script>
+        <h2> console.warn() </h2>
+        <p>
+            Used to log warning message to the console. By default the warning message will be highlighted with yellow color.
+        </p>
+        <script> console.warn("This is a warning") </script>
+       
+        <h2> console.clear() </h2>
+        <p>
+            Used to clear the console. The console will be cleared, in case of Chrome a simple overlayed text will be printed like : ‘Console was cleared’ while in firefox no message is returned.
+        </p>
+        <script> console.clear() </script>
+        
+        <h2> console.time()</h2>
+        <p>
+            Whenever we want to know the amount of time spend by a block or a function, we can make use of the time() and timeEnd() methods provided by the javascript console object. They take a label which must be same, and the code inside can be anything( function, object, simple console).
+        </p>
+        
+
+        <h2>console.table()</h2>
+        <p>
+            This method allows us to generate a table inside a console. The input must be an array or an object which will be shown as a table.
+        </p>
+        <script>
+            var a = {name :"Rushi",age:21,city:"Pune"}
+            var b = {name:"Atul",age:22,city:"Satara"}
+            var c = {name :"Omkar",age:23,city:"Talegaon"}
+            
+            console.table(a,b,c);
+
+        </script>
+
+        <h2> console.count()</h2>
+        <p>
+            This method is used to count the number that the function hit by this counting method.
+        </p>
+        <script>
+            for (let i=0;i<5;i++){
+                console.count(i);
+            }
+        </script>
+
+        <h2> custom console logs</h2>
+
+        <p>User can add Styling to the console logs in order to make logs Custom . The Syntax for it is to add the css styling as a parameter to the logs which will replace %c in the logs as shown in the example below</p>
+        <script>
+            const spacing = '10px'; 
+                 const styles =  
+                        `padding: ${spacing}; background-color: white; color: green; font-style:  
+                                             italic; border: 1px solid black; font-size: 2em;`; 
+                console.log('%cJS', styles); 
+
+        </script>
+
+
+
+
+
+
+
+
+    </body>
+</html>
